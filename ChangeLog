@@ -1,0 +1,12 @@
+2013-04-20  Andrey "Ivnish" Ivnitsky <ivnitsky.a@gmail.com>
+
+	version 0.2
+	* Closed Issue #2, Highlight the current note (change image)
+	* Closed Issue #3, Unchecking repeat checkbox now stop sound
+
+2011-05-02  Andrey "Ivnish" Ivnitsky <ivnitsky.a@gmail.com>
+
+	version 0.1
+	* Initial release. Based on Qt.
+
+ChangeLog ends here

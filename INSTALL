@@ -1,0 +1,10 @@
+Installation
+
+	* unpack qsimpleguitar-0.2.tar.gz 
+	* cd <QSimpleGuitarDir>
+	* qmake-qt4 QSimpleGuitar.pro -r -spec linux-g++
+	* make -w
+	* sudo make install
+
+Sorry for my English ;)
+
