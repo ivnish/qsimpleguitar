@@ -1,0 +1,12 @@
+/Makefile*
+/*.pro.user
+/*.pro.user.*
+/build/*
+/src/ui_*.h
+/qsimpleguitar
+/.qmake.stash
+/object_script.*
+/release/*
+/debug/*
+/scripts/*
+/src/qrc_res.cpp

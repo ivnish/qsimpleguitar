@@ -1,26 +1,20 @@
-#-------------------------------------------------
-#
-# Project created by QtCreator 2011-05-01T11:34:36
-#
-#-------------------------------------------------
+QT += core gui widgets
 
-QT       += core gui
-
-TARGET = src/QSimpleGuitar-win
+TARGET = QSimpleGuitar
 TEMPLATE = app
 
 SOURCES += \
     src/mainwindow.cpp \
     src/main.cpp
 
-HEADERS  += \
+HEADERS += \
     src/mainwindow.h
 
-FORMS    += \
+FORMS += \
     data/mainwindow.ui
 
-OBJECTS_DIR = src
-MOC_DIR = src
+OBJECTS_DIR = build
+MOC_DIR = build
 UI_DIR = src
 RCC_DIR = src
 
