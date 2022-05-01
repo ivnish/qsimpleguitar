@@ -4,9 +4,9 @@ The program was written to windows in the distant 2004 (called "Ivnish Musician"
 
 Screenshots:
 
-![Kubuntu 20.04](https://raw.githubusercontent.com/ivnish/qsimpleguitar/main/screenshots/kubuntu20.04.png)
+![Kubuntu 20.04](https://raw.githubusercontent.com/ivnish/qsimpleguitar/main/screenshots/kubuntu2004.png)
 
-![Ubuntu 10.10](https://raw.githubusercontent.com/ivnish/qsimpleguitar/main/screenshots/ubuntu10.10.png)
+![Ubuntu 10.10](https://raw.githubusercontent.com/ivnish/qsimpleguitar/main/screenshots/ubuntu1010.png)
 
 ![Windows 7](https://raw.githubusercontent.com/ivnish/qsimpleguitar/main/screenshots/windows7.png)
 
