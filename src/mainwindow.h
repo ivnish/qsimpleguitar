@@ -26,7 +26,7 @@ private slots:
   void on_pushButton_2_clicked();
   void on_pushButton_clicked();
   void on_checkBox_clicked();
-  void PlaySound();
+  void PlayGuitarSound();
   void restartImg();
   void on_actionQuit_triggered();
   void on_actionAbout_triggered();

@@ -2,17 +2,13 @@
 #include "ui_mainwindow.h"
 #include <QtGui>
 #include <QMessageBox>
-#ifdef Q_OS_LINUX
-  #include <QMediaPlayer>
-#endif
+#include <QMediaPlayer>
 
 QTimer *timer;               // Timer to repeat notes
 QString pathToSound;         // Path to sound files for slot
 extern QString szPathToRes;  // The path to resource directory
 extern QString appVersion;   // Current app version
-#ifdef Q_OS_LINUX
-  QMediaPlayer *player;      // Player. Use in Linux
-#endif
+QMediaPlayer *player;        // Player. Use in Linux
 
 MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWindow) {
   ui->setupUi(this);
@@ -23,29 +19,21 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
 
   // Create a timer to repeat notes
   timer = new QTimer(this);
-  // Connect the timer in the slot PlaySound
-  connect(timer, SIGNAL(timeout()), this, SLOT(PlaySound()));
+  // Connect the timer in the slot PlayGuitarSound
+  connect(timer, SIGNAL(timeout()), this, SLOT(PlayGuitarSound()));
 
-  #ifdef Q_OS_LINUX
-    // Create a player. Due to the fact that since there have cut Ubuntu 10.10
-    // old audio subsystem, instead of QSound::play has to use
-    // QMediaPlayer. In windows QSound::play works
-    player = new QMediaPlayer;
-  #endif
+  // Create a player
+  player = new QMediaPlayer;
 }
 
 MainWindow::~MainWindow() {
   delete ui;
 }
 
-void MainWindow::PlaySound() {
-  #ifdef Q_OS_LINUX
-    // choose a note
-    player->setMedia(QUrl::fromLocalFile(pathToSound));
-    player->play();
-  #elif defined Q_OS_WIN32
-    QSound::play(pathToSound);
-  #endif
+void MainWindow::PlayGuitarSound() {
+  // choose a note
+  player->setMedia(QUrl::fromLocalFile(pathToSound));
+  player->play();
 }
 
 void MainWindow::restartImg() {
@@ -54,7 +42,7 @@ void MainWindow::restartImg() {
 
 void MainWindow::PlayAndCheckTimer(const QString pTS) {
   pathToSound = pTS;
-  PlaySound();  // Play note
+  PlayGuitarSound();  // Play note
 
   // If checked "Repeat"
   if (ui->checkBox->isChecked()) {

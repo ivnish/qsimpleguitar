@@ -1,4 +1,4 @@
-QT += core gui widgets
+QT += core gui widgets multimedia
 
 TARGET = QSimpleGuitar
 TEMPLATE = app
@@ -27,5 +27,3 @@ TRANSLATIONS += \
 RC_FILE = QSimpleGuitar.rc
 
 LIBS+=-L%QTDIR%/plugins/imageformats
-
-QTPLUGIN = qico

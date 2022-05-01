@@ -10,3 +10,4 @@
 /debug/*
 /scripts/*
 /src/qrc_res.cpp
+qsimpleguitar_plugin_import.cpp

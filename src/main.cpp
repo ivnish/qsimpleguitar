@@ -6,11 +6,6 @@
 QString szPathToRes;         // Path to resource directory
 QString appVersion = "0.3";  // Current app version
 
-#ifdef Q_OS_WIN32
-  #include <QtPlugin>
-  Q_IMPORT_PLUGIN(qico)
-#endif
-
 int main(int argc, char *argv[]) {
   QApplication a(argc, argv);
   a.setApplicationName("QSimpleGuitar");
