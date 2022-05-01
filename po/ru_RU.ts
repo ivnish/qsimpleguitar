@@ -1,98 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../data/mainwindow.ui" line="26"/>
-        <source>QSimpleGuitar 0.2</source>
-        <translation type="unfinished"></translation>
+        <source>QSimpleGuitar</source>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="42"/>
         <location filename="../data/mainwindow.ui" line="77"/>
         <source>E</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="49"/>
         <source>H</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="56"/>
         <source>G</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="63"/>
         <source>D</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="70"/>
         <source>A</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="93"/>
         <source>Repeat every</source>
-        <translation type="unfinished">Повторять каждые</translation>
+        <translation>Повторять каждые</translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="122"/>
         <source>seconds</source>
-        <translation type="unfinished">секунд(ы)</translation>
+        <translation>секунд(ы)</translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="156"/>
         <source>File</source>
-        <translation type="unfinished">Файл</translation>
+        <translation>Файл</translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="162"/>
         <source>Help</source>
-        <translation type="unfinished">Справка</translation>
+        <translation>Справка</translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="171"/>
         <source>Exit</source>
-        <translation type="unfinished">Выход</translation>
+        <translation>Выход</translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="174"/>
         <source>Ctrl+Q</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location filename="../data/mainwindow.ui" line="179"/>
         <source>About...</source>
-        <translation type="unfinished">О программе...</translation>
+        <translation>О программе...</translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="62"/>
+        <location filename="../src/mainwindow.cpp" line="137"/>
         <source>&lt;p&gt;Based on Qt </source>
-        <translation type="unfinished">&lt;p&gt;Основан на Qt </translation>
+        <translation>&lt;p&gt;Основан на Qt </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="65"/>
+        <location filename="../src/mainwindow.cpp" line="140"/>
         <source>&lt;p&gt;Build on </source>
-        <translation type="unfinished">&lt;p&gt;Собран </translation>
+        <translation>&lt;p&gt;Собран </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="67"/>
+        <location filename="../src/mainwindow.cpp" line="142"/>
         <source> at </source>
-        <translation type="unfinished"> в </translation>
+        <translation> в </translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="70"/>
-        <source>&lt;p&gt;Copyright (c) Andrey Ivnitsky, 2011-2013. All rights reserved.&lt;/p&gt;</source>
-        <translation type="unfinished">&lt;p&gt;Copyright (c) Андрей Ивницкий, 2011-2013. Все права защищены.&lt;/p&gt;</translation>
+        <location filename="../src/mainwindow.cpp" line="145"/>
+        <source>&lt;p&gt;Copyright (c) Andrei Ivnitskii, 2011-2022. All rights reserved.&lt;/p&gt;</source>
+        <translation></translation>
     </message>
     <message>
-        <location filename="../src/mainwindow.cpp" line="72"/>
-        <source>About QSimpleGuitar 0.2</source>
-        <translation type="unfinished">О программе QSimpleGuitar 0.2</translation>
+        <location filename="../src/mainwindow.cpp" line="147"/>
+        <source>About QSimpleGuitar</source>
+        <translation>О QSimpleGuitar</translation>
     </message>
 </context>
 </TS>
