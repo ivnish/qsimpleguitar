@@ -3,7 +3,8 @@
 #include <QLocale>
 #include "mainwindow.h"
 
-QString szPathToRes;  // Path to resource directory
+QString szPathToRes;         // Path to resource directory
+QString appVersion = "0.3";  // Current app version
 
 #ifdef Q_OS_WIN32
   #include <QtPlugin>
@@ -13,7 +14,7 @@ QString szPathToRes;  // Path to resource directory
 int main(int argc, char *argv[]) {
   QApplication a(argc, argv);
   a.setApplicationName("QSimpleGuitar");
-  a.setApplicationVersion("0.3");
+  a.setApplicationVersion(appVersion);
   a.setWindowIcon(QIcon(":/data/gitara_icon_64.ico"));
 
   #ifdef Q_OS_LINUX
@@ -36,6 +37,7 @@ int main(int argc, char *argv[]) {
 
   // Create main window
   MainWindow w;
+  w.setWindowTitle("QSimpleGuitar " + appVersion);
   w.show();
 
   return a.exec();

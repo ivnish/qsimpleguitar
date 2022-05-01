@@ -9,6 +9,7 @@
 QTimer *timer;               // Timer to repeat notes
 QString pathToSound;         // Path to sound files for slot
 extern QString szPathToRes;  // The path to resource directory
+extern QString appVersion;   // Current app version
 #ifdef Q_OS_LINUX
   QMediaPlayer *player;      // Player. Use in Linux
 #endif
@@ -130,7 +131,9 @@ void MainWindow::on_actionQuit_triggered() {
 
 void MainWindow::on_actionAbout_triggered() {
   QString szAbout;
-  szAbout.append("<h2>QSimpleGuitar 0.3</h2>");
+  szAbout.append("<h2>QSimpleGuitar ");
+  szAbout.append(appVersion);
+  szAbout.append("</h2>");
   szAbout.append(tr("<p>Based on Qt "));
   szAbout.append(qVersion());
   szAbout.append("</p>");
@@ -141,5 +144,5 @@ void MainWindow::on_actionAbout_triggered() {
   szAbout.append("<br></p>");
   szAbout.append(tr("<p>Copyright (c) Andrei Ivnitskii, 2011-2022. All rights reserved.</p>"));
 
-  QMessageBox::about(this, tr("About QSimpleGuitar 0.3"), szAbout);
+  QMessageBox::about(this, tr("About QSimpleGuitar"), szAbout);
 }
